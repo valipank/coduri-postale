@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="CoduriPostale" default="spool" basedir=".">
+
+	<property file="config.properties" />
+	<property name="root" value="." />
+	
+	<target name="spool" description="spool database">
+		<echo message="dump database tables for hosting" />
+		<exec executable="${basedir}/sql/misc-dump-hosting.bat">
+			<arg value="${CONN_USER}" />
+			<arg value="${CONN_PWD}" />
+		</exec>
+	</target>
+
+</project>
