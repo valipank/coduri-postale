@@ -1,0 +1,1 @@
+mysqldump -u %1 -p%2 %3 --add-drop-table --verbose coduri_postale coduri_postale_b coduri_postale_localitati_mari coduri_postale_localitati_mici judete_ro artere v_coduripostale > sql/coduri-postale-dump.sql 

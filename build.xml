@@ -9,6 +9,7 @@
 		<exec executable="${basedir}/sql/misc-dump-hosting.bat">
 			<arg value="${CONN_USER}" />
 			<arg value="${CONN_PWD}" />
+			<arg value="${CP_DB}" />
 		</exec>
 	</target>
 
