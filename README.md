@@ -15,7 +15,7 @@ Pe baza acestei tabele am generat un [fișier json](https://github.com/valipank/
    - "Alee" "Trandafirilor" -> "Alee*a* Trandafirilor"
    - "Cale" "Plevnei" -> "Cale*a* Plevnei"
    - "Parc" "Chindia" -> "Parc*ul* Chindia"
-   - "Drum" "Regimentului" -> "Drumul Regimentului"
+   - "Drum" "Regimentului" -> "Drum*ul* Regimentului"
 6. **v_coduripostale** = un  _view_  care grupează datele din cele 4 tabele (doar informațiile de bază, fără [cod SIRUTA](https://www.siruta.nxm.ro/)) - e util petru a ușura interogările pe MySQL:
    * judet_cod = codul județului - vezi mai sus [API-ul cu lista județelor](https://valipank.ro/api/v1/judete/)
    * localitate = numele localității (fie oraș, sat, comună) - vezi [aici](https://valipank.ro/api/v1/localitati?judet=GL) o listă a localităților din fiecare județ (evident parametrul  __judet__  poate fi schimbat în funcție de căutare)
